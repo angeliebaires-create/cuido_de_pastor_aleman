@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cómo cuidar un Pastor Alemán</title>
+  <meta name="description" content="Guía práctica para cuidar un Pastor Alemán: alimentación, ejercicio, salud, entrenamiento e higiene." />
+  <style>
+    /* Reset básico */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #f7f9fc; color: #122; }
+
+    /* Contenedor principal */
+    .container {
+      max-width: 980px;
+      margin: 28px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(9,25,47,0.08);
+      overflow: hidden;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 20px 24px;
+      background: linear-gradient(90deg, #0b6fbf11, #ffffff);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0 0 6px 0;
+      color: #0b3b61;
+    }
+    header p.lead {
+      margin: 0;
+      font-size: .95rem;
+      color: #334;
+      opacity: .85;
+    }
+
+    /* Imagen principal (solo 1 <img> como pediste) */
+    .hero-img {
+      width: 200px;
+      height: 140px;
+      overflow: hidden;
+      border-radius: 10px;
+      display: inline-block;
+      background: linear-gradient(180deg,#e6eef9,#ffffff);
+      flex-shrink: 0;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    main {
+      padding: 22px 28px 32px 28px;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: 18px;
+    }
+
+    section h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      color: #0b3b61;
+    }
+
+    ul.checklist {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    ul.checklist li {
+      margin-bottom: 8px;
+    }
+
+    .tips {
+      background: #eef7ff;
+      border-left: 4px solid #0b6fbf;
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #fbfdff;
+      padding: 12px 20px;
+      border-top: 1px solid #eef3f8;
+      text-align: center;
+      color: #334;
+      font-size: .9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      header { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+      .hero-img { margin: 0 auto; width: 80%; height: 180px; }
+      main { padding: 18px; }
+    }
+
+    /* Accesibilidad: enfoque visible */
+    a:focus, button:focus, img:focus {
+      outline: 3px solid #bfe0ff;
+      outline-offset: 2px;
+    }
+
+    /* Botón de acción (no obligatorio) */
+    .cta {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: #0b6fbf;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .cta:active { transform: translateY(1px); }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <header>
+      <div class="hero-img" aria-hidden="false">
+        <!--
+          Inserta una imagen en la misma carpeta que este archivo y nómbrala:
+          pastor-aleman.jpg
+          Si quieres un formato diferente, cambia el nombre en el atributo src.
+        -->
+        <img src="img/Cane_da_pastore_tedesco_adulto.jpg" alt="Pastor Alemán adulto sentado en un parque" />
+      </div>
+
+      <div>
+        <h1>Cómo cuidar un Pastor Alemán</h1>
+        <p class="lead">Guía práctica y clara sobre alimentación, ejercicio, salud, entrenamiento e higiene para tu Pastor Alemán.</p>
+        <a class="cta" href="#ejercicio">Ver consejos rápidos</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="alimentacion" aria-labelledby="al-title">
+        <h2 id="al-title">Alimentación</h2>
+        <p>Los Pastores Alemanes son perros grandes y activos. Su dieta debe ser de alta calidad y adaptada a su edad, tamaño y nivel de actividad.</p>
+        <ul class="checklist" aria-label="Puntos clave de alimentación">
+          <li>Pienso balanceado de buena marca formulado para razas grandes: consulta la tabla de la marca según peso y edad.</li>
+          <li>Evita cambios bruscos de alimento y las sobras demasiado grasosas o condimentadas.</li>
+          <li>Divide la ración diaria en 2 comidas para reducir el riesgo de torsión gástrica (especialmente en adultos).</li>
+          <li>Siempre agua fresca disponible y control del peso corporal.</li>
+        </ul>
+        <div class="tips" role="note">
+          Consejo rápido: para cachorros usa una fórmula para crecimiento hasta la madurez (consulta al veterinario para la edad exacta de cambio).
+        </div>
+      </section>
+
+      <section id="ejercicio" aria-labelledby="ej-title">
+        <h2 id="ej-title">Ejercicio y estimulación</h2>
+        <p>Son perros muy activos e inteligentes: necesitan ejercicio físico y estimulación mental diaria.</p>
+        <ul class="checklist" aria-label="Puntos clave de ejercicio">
+          <li>Al menos 1–2 horas de ejercicio al día, repartidas entre paseos, trote y juegos activos.</li>
+          <li>Incluye actividades de olfato y entrenamiento (juegos de búsqueda, puzzles caninos, obediencia).</li>
+          <li>Evita ejercicio intenso inmediatamente después de comer.</li>
+          <li>Socialización temprana con otros perros y personas para un carácter equilibrado.</li>
+        </ul>
+      </section>
+
+      <section id="salud" aria-labelledby="sa-title">
+        <h2 id="sa-title">Salud y visitas al veterinario</h2>
+        <p>Controles regulares evitan problemas graves. El Pastor Alemán tiene predisposición a ciertas condiciones hereditarias.</p>
+        <ul class="checklist" aria-label="Puntos clave de salud">
+          <li>Vacunaciones y desparasitaciones según calendario local.</li>
+          <li>Revisiones anuales (o según recomiende tu vet) y consultas si notas cojera, intolerancia al ejercicio o cambios de apetito.</li>
+          <li>Vigila la displasia de cadera y codo: evita ejercicio excesivo en crecimiento y mantén un peso adecuado.</li>
+          <li>Cuida la salud dental: cepillados regulares o juguetes masticables recomendados por el veterinario.</li>
+        </ul>
+      </section>
+
+      <section id="entrenamiento" aria-labelledby="en-title">
+        <h2 id="en-title">Entrenamiento y conducta</h2>
+        <p>Son perros con gran capacidad de aprendizaje y trabajan muy bien con refuerzo positivo.</p>
+        <ul class="checklist" aria-label="Puntos clave de entrenamiento">
+          <li>Comienza desde cachorro con órdenes básicas: sentarse, quedarse, venir, caminar con correa.</li>
+          <li>Sesiones cortas y frecuentes (5–15 min) con refuerzo positivo: premios, caricias y voz amable.</li>
+          <li>Evita castigos físicos; en su lugar redirige comportamientos y recompensa lo correcto.</li>
+          <li>Busca clases de obediencia si necesitas ayuda o quieres desarrollar trabajo más avanzado (protección, rastreo, agility).</li>
+        </ul>
+      </section>
+
+      <section id="higiene" aria-labelledby="hi-title">
+        <h2 id="hi-title">Higiene y cuidado del pelaje</h2>
+        <p>El Pastor Alemán tiene doble capa: subpelo denso y capa exterior. El cepillado regular es esencial.</p>
+        <ul class="checklist" aria-label="Puntos clave de higiene">
+          <li>Cepillado 2–3 veces por semana; durante la muda (primavera/otoño) puede ser diario.</li>
+          <li>Baños solo cuando sea necesario (aprox. cada 1–3 meses) usando champú para perros.</li>
+          <li>Revisa orejas, uñas y ojos regularmente. Corta uñas según necesidad.</li>
+          <li>Protege contra pulgas, garrapatas y parásitos internos con productos veterinarios seguros.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="resumen">
+        <h2 id="resumen">Resumen rápido</h2>
+        <p>Alimentación equilibrada, ejercicio diario, chequeos veterinarios periódicos, entrenamiento con refuerzo positivo y cuidado del pelaje son las bases para un Pastor Alemán sano y feliz.</p>
+        <p style="margin-top:10px; font-style:italic;">Recuerda: cada perro es individuo. Si notas cambios en su comportamiento o salud, consulta con un veterinario de confianza.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Guía básica para cuidar a tu Pastor Alemán · Guarda este archivo como <strong>index.html</strong> en la misma carpeta que la imagen <code>pastor-aleman.jpg</code></div>
+    </footer>
+  </div>
+</body>
+</html>
